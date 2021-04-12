@@ -2,16 +2,19 @@
 <head>
 <link rel = 'stylesheet' href = 'css/styles.css'>
 <script src="https://d3js.org/d3.v6.min.js"></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     
 <header class = 'head'>
    <div class = 'name'><h1>Your</h1><h2>app™</h2></div>
    <div class = 'bell'><div class = 'svg'><img src = "icons/icon-bell.svg">
+    
     </div>
+    
    <img class = 'profpic' src = 'images/member-1.jpg'>
    <p>FIRSTNAME LASTNAME</p>
+   <div class = 'notify'> </div>
 </div>
 
 </div>
@@ -105,28 +108,36 @@
         <img class = 'profpic' src = 'images/member-3.jpg'>
         <div class = 'info'>
         <p>Victoria Chambers</p>
-            <a href = '#'>victoria.chamers80@example</a>
+       
+            <a href = '#'>victoria.chamers80@example</a> 
+            <p class = 'date'>09/75/4023</p>
         </div>
     </div> 
     <div class = 'contents2'>
         <img class = 'profpic' src = 'images/member-1.jpg'>
         <div class = 'info'>
             <p>Dawn Wood</p>
+            
                 <a href = '#'>dawn.wood50@example</a>
+                <p class = 'date'>09/75/4023</p>
             </div>
     </div> 
     <div class = 'contents2'>
         <img class = 'profpic' src = 'images/member-4.jpg'>
         <div class = 'info'>
             <p>Dan Smith</p>
-                <a href = '#'>dan.smith7@example</a>
+           
+                <a href = '#'>dan.smith7@example</a> 
+                <p class = 'date'>09/75/4023</p>
             </div>
     </div> 
     <div class = 'contents2'>
         <img class = 'profpic' src = 'images/member-2.jpg'>
         <div class = 'info'>
             <p>Sylvia Crystal</p>
+            
                 <a href = '#'>sylvia.crystal42@example</a>
+                <p class = 'date'>09/75/4023</p>
             </div>
     </div> 
 </div>
@@ -169,11 +180,11 @@
 
 </div>
 <div class = 'messageuser'> 
-    <div class = 'content'>
+    <div class = 'contentss'>
         <h5>Message User</h5>
     </div> 
-<input type = 'text' id = 'userid'>
-<textarea id = 'message'></textarea>
+<input type = 'text' id = 'userid' placeholder="Search for User">
+<textarea id = 'message' placeholder="Message for User"></textarea>
 <input type = 'submit' id = 'submit' value="SEND">
 </div>
 <div class = 'settings'>
@@ -186,27 +197,30 @@
         <p>Send Email Notifications</p>
             <label class="switch">
             <input type="checkbox">
-            <span class="slider round"></span>
+            <span class="slider round" ></span>
+            <span class="on">ON</span>
+            <span class="off">OFF</span>
           </label>
     </div> 
+    <br>
     <div class = 'content'>
         <p>Set Profile to Public</p>
-            <label class="switch2">
+            <label class="switch">>
             <input type="checkbox">
             <span class="slider round"></span>
+            <span class="on">ON</span>
+            <span class="off">OFF</span>
           </label>
     </div> 
-    <div class="dropdown">
-        <button class="dropbtn">Select Timezone</button>
-        <div class="dropdown-content">
-          <a href="#">Central Daylight Time - Chicago (GMT-5)</a>
-          <a href="#">Mountain Daylight Time - Denver (GMT-6)</a>
-          <a href="#">Mountain Standard Time - Phoenix (GMT-7)</a>
-          <a href="#">Pacific Daylight Time - Los Angeles (GMT-7)</a>
-          <a href="#">Eastern Daylight Time - Washington, DC (GMT-4)</a>
-          <a href="#">Alaska Daylight Time - Anchorage (GMT-8)</a>
-        </div>
-      </div>
+    <select name="timezone" id="timezone">
+        <option value="">Select Timezone</option>
+        <option value="">Central Daylight Time - Chicago (GMT-5)</option>
+            <option value="">Mountain Daylight Time - Denver (GMT-6)</option>
+                <option value="">Mountain Standard Time - Phoenix (GMT-7)</option>
+                    <option value="">Pacific Daylight Time - Los Angeles (GMT-7)</option>
+                        <option value="">Eastern Daylight Time - Washington, DC (GMT-4)</option>
+                            <option value="">Alaska Daylight Time - Anchorage (GMT-8)</option>
+    </select>
    
         <input type = 'submit' id = 'save' value="SAVE">
         <input type = 'submit' id = 'cancel' value="CANCEL">
