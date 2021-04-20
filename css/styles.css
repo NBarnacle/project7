@@ -6,8 +6,9 @@ margin:0;
 
 .alert-banner{
     width:90%;
-    height:7%;
-    margin-left:8.5%;
+    height:35%;
+    margin-left:5%;
+    margin-top:2.5%;
     background-color: rgb(79, 79, 156);
     border-radius: 10px;
     color:white;
@@ -34,11 +35,7 @@ margin:0;
     left:58%;
     float:left;
 }
-.head{
-width:100%;
-height:10%;
-background-color:rgb(79, 79, 156);
-}
+
 .head h1{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -90,12 +87,7 @@ background-color:rgb(79, 79, 156);
 }
 
 
-.nav{
-    float:left;
-    background-color: mediumslateblue;
-    height:375%;
-    width:7%;
-}
+
 .link{
 width:40%;
 height:2%;
@@ -104,22 +96,22 @@ margin-left:25%;
 
 }
 .grid{
-    width: 93%;
+    width: 100%;
     height:200%;
     max-height: fit-content;
 
     
 
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 15% 15% 7.5% 25% 25% 35% 30%;
+    grid-template-columns: 7% 93%;
+    grid-template-rows: 4% 7.5% 15% 15% 20% 7.5% 30% 30% 30% 30%;
     float: left;
 
 }
 .welcome{
     width:20%;
     background-color: white;
-    height:10%;
+    height:40%;
     font-size: medium;
     float:left;
     color:grey;
@@ -127,12 +119,12 @@ margin-left:25%;
 }
 .welcome p{
    padding-top:7.5%;
-   padding-left:12.5%;  
+   padding-left:5.5%;  
 }
 .search{
 width:100%;
 background-color:rgb(236, 236, 236);
-height:10%;
+height:40%;
 }
 .search input{
     float:right;
@@ -144,21 +136,44 @@ height:10%;
     border: 1px solid grey;
     
 }
-.linegraph{
+.head{
+  
+    background-color: mediumslateblue;
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 2;
+}
+.nav{
+  
+    background-color: mediumslateblue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 11;
+}
+.top{
+  
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+.linegraph{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
    border-bottom: solid;
    border-width: 1px;
    border-color: lightgrey;
-  
 }
 .bargraph{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
     
     border-right: solid;
     border-bottom: solid;
@@ -166,57 +181,57 @@ height:10%;
     border-color: lightgrey;
 }
 .piegraph{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
     border-bottom: solid;
     border-width: 1px;
     border-color: grey;
 }
 .socialgraph{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.newmembers{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: grey;}
+  
+.recentactivity{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
     border-bottom: solid;
     border-width: 1px;
     border-color: grey;
 
 }
-
-.newmembers{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 5;
-    grid-row-end: 5;
-    border-right: solid;
-    border-width: 1px;
-    border-color: grey;
-}
-.recentactivity{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 6;
-    grid-row-end: 6;
-  
-
-}
 .messageuser{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 7;
-    grid-row-end: 7;
-   
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 10;
     border-right: solid;
     border-width: 1px;
 
 }
 .settings{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 8;
-    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 11;
   
 
 }
@@ -252,7 +267,7 @@ h3{
     background-color: rgb(235, 235, 235);
     float:left;
     margin-left:2.5%;
-    margin-top:22.5px;
+    margin-top:6.5%;
     border: 1px solid grey;
     
 }
@@ -313,20 +328,20 @@ padding-bottom:15px;
 
 .contents2{
     width:100%;
-    height:20%;
+    height:22.5%;
     border-bottom:lightgray 1px solid;
+    border-right:lightgray 1px solid;
 }
 .content{
     width:100%;
     height:10%;
-    padding:0;
-    margin:0;
+  
     
 }
 .profpic{
     width:40px;
     height:40px;
-    margin-top:15px;
+    margin-top:40px;
     margin-left:10px;
     border-radius:20px;
 
@@ -432,9 +447,9 @@ border-style: none;
 }
 .info{
     width:60%;
-    height:20%;
+    height:fit-content;
     margin-left:5%;
-    margin-top:6%;
+    margin-top:30px;
     float: left;
     padding:0;
 }
@@ -452,6 +467,14 @@ border-style: none;
 }
 .profpic{
     float:left;
+}
+.uprofpic{
+    float:left;
+    width:40px;
+    height:40px;
+    margin-top:15px;
+    margin-left:10px;
+    border-radius:20px;
 }
 #userid{
     width:80%;
@@ -564,11 +587,6 @@ h5{
 
 @media (min-width:768px){
         
-        .head{
-        width:100%;
-        height:12%;
-       
-        }
         .head h1{
             font-family: Arial, Helvetica, sans-serif;
             color: white;
@@ -604,7 +622,7 @@ h5{
         .welcome{
                 width:15%;
                 background-color: white;
-                height:10%;
+                height:40%;
                 font-size: medium;
                 float:left;
                 color:grey;
@@ -634,31 +652,130 @@ h5{
                 border-right: 2px solid white;
             }
 
-            .bell .profpic{
-                margin-top:20px;
+            .user .profpic{
+                margin-top:0px;
             }
             
-        .grid{
-            width: 93%;
-            height:200%;
-            max-height: fit-content;
-        
+            .grid{
+                width: 100%;
+                height:200%;
+                max-height: fit-content;
+            
+                
+            
+                display: grid;
+                grid-template-columns: 7% 46.5% 46.5%;
+                grid-template-rows: 4% 7.5% 20% 20% 20% 10% 30% 35%;
+                float: left;
+            
             
         
-            display: grid;
-            grid-template-columns: repeat(4,25%);
-            grid-template-rows:20% 20% 15% 30% 30% 25% 35% 30%;
-            float: left;
+        }
+        .head{
+  
+            background-color: mediumslateblue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .nav{
+          
+            background-color: mediumslateblue;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 11;
+        }
+        .top{
+          
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
         
         }
-        .media{
-            margin-top:4%;
+        .linegraph{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+           border-bottom: solid;
+           border-width: 1px;
+           border-color: lightgrey;
+        }
+        .bargraph{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            
+            border-right: solid;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+        }
+        .piegraph{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: grey;
+        }
+        .socialgraph{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 6;
+            grid-row-end: 7;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: grey;
+        }
+        
+        .newmembers{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 7;
+            grid-row-end: 8;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: grey;}
+          
+        .recentactivity{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 7;
+            grid-row-end: 8;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: grey;
+        
+        }
+        .messageuser{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 8;
+            grid-row-end: 9;
+            border-right: solid;
+            border-width: 1px;
+        
+        }
+        .settings{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 8;
+            grid-row-end: 9;
+          
+        
         }
         .info{
             width:60%;
             height:auto;
-            margin-top:15px;
+            margin-top:9%;
             float: left;
+    
         }
         .info p{
           
@@ -725,6 +842,19 @@ h5{
             padding-left:20px;
         
         }
+        .contents2{
+            width:100%;
+            height:20%;
+            border-bottom:lightgray 1px solid;
+            border-right:lightgray 1px solid;
+        }
+        .content{
+            width:100%;
+            height:20%;
+      
+          
+            
+        }
         .facebook{
             width:40px;
             height:60%;
@@ -767,19 +897,18 @@ h5{
             font-weight: lighter;
         }
         .content{
+            height:15%;
             
-            margin-top:10px;
-            height:auto;
         }
         .profpic{
             margin-left:5%;
             float:left;
-            margin-top:20px;
+            margin-top:30px;
         }
         .welcome{
             width:20%;
             background-color: white;
-            height:10%;
+            height:40%;
             font-size: medium;
             float:left;
             color:grey;
@@ -792,7 +921,7 @@ h5{
         .search{
         width:100%;
         background-color:rgb(236, 236, 236);
-        height:10%;
+        height:40%;
         }
         .search input{
             float:right;
@@ -804,121 +933,168 @@ h5{
             border: 1px solid grey;
             
         }
-        .linegraph{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 1;
-           border-bottom: solid;
-           border-width: 1px;
-           border-color: lightgrey;
-          
-        }
-        .bargraph{
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 2;
+        .content h5{
+            padding-top:50px;
             
-            border-right: solid;
-            border-bottom: solid;
-            border-width: 1px;
-            border-color: lightgrey;
+            margin-left:5%;  
         }
-        .piegraph{
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 2;
-            grid-row-end: 2;
-            border-bottom: solid;
-            border-width: 1px;
-            border-color: grey;
-        }
-        .socialgraph{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 3;
-            border-bottom: solid;
-            border-width: 1px;
-            border-color: grey;
-        
+        .media{
+            width:30%;
+            height:70%;
+            background-color: rgb(235, 235, 235);
+            float:left;
+            margin-left:2.5%;
+            margin-top:3%;
+            border: 1px solid grey;
+            
         }
         
-        .newmembers{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 4;
-            grid-row-end: 4;
-            border-right: solid;
-            border-width: 1px;
-            border-color: grey;
-        }
-        .recentactivity{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 5;
-            grid-row-end: 5;
-          
-        
-        }
-        .messageuser{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 6;
-            grid-row-end: 6;
-           
-            border-right: solid;
-            border-width: 1px;
-        
-        }
-        .settings{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 7;
-            grid-row-end: 7;
-          
-        
-        }
 }
 @media (min-width:1024px){
-    .head{
-        width:100%;
-        height:12%;
-       
-        }
+    
         .notify{
             width: 10px;
             height:10px;
             background-color:lightgreen;
             position:absolute;
             border-radius: 15px;
-           top:3%;
-            left:83%;
+           top:2%;
+            left:83.5%;
             float:left;
         }
    .logo{
     width:80px;}
     .grid{
-        width: 93%;
+        width: 100%;
         height:200%;
         max-height: fit-content;
     
         
     
         display: grid;
-        grid-template-columns: repeat(4,25%);
-        grid-template-rows:25% 25% 15% 25% 25% 25% 35% 30%;
+        grid-template-columns: 7% 46.5% 46.5%;
+        grid-template-rows: 4% 7.5% 25% 25% 12.5% 25% 30% ;
         float: left;
     
-    }
+    
+
+}
+.info{
+    width:60%;
+    height:20%;
+    margin-left:5%;
+    margin-top: 35px;
+    float: left;
+    padding:0;
+}
+.head{
+  
+    background-color: mediumslateblue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.nav{
+  
+    background-color: mediumslateblue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 11;
+}
+.top{
+  
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+.linegraph{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+   border-bottom: solid;
+   border-width: 1px;
+   border-color: lightgrey;
+}
+.bargraph{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    
+    border-right: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+.piegraph{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+.socialgraph{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.newmembers{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+  
+.recentactivity{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: grey;
+
+
+}
+.messageuser{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    border-right: solid;
+    border-width: 1px;
+
+}
+.settings{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  
+
+}
     .welcome{
-        width:20%;
+        width:30%;
         background-color: white;
-        height:10%;
+        height:40px;
         font-size: medium;
         float:left;
-        color:grey;
+        color:lightgrey;
         font-family: arial;   
     }
     .welcome p{
@@ -928,7 +1104,7 @@ h5{
     .search{
     width:100%;
     background-color:rgb(236, 236, 236);
-    height:10%;
+    height:40%;
     }
     .search input{
         float:right;
@@ -940,82 +1116,8 @@ h5{
         border: 1px solid grey;
         
     }
-    .linegraph{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 1;
-       border-bottom: solid;
-       border-width: 1px;
-       border-color: lightgrey;
-      
-    }
-    .bargraph{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        
-        border-right: solid;
-        border-bottom: solid;
-        border-width: 1px;
-        border-color: lightgrey;
-    }
-    .piegraph{
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        border-bottom: solid;
-        border-width: 1px;
-        border-color: grey;
-    }
-    .socialgraph{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 3;
-        grid-row-end: 3;
-        border-bottom: solid;
-        border-width: 1px;
-        border-color: grey;
-    
-    }
-    
-    .newmembers{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 4;
-        border-right: solid;
-        border-width: 1px;
-        border-color: grey;
-    }
-    .recentactivity{
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 4;
-      
-    
-    }
-    .messageuser{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 5;
-       
-        border-right: solid;
-        border-width: 1px;
-    
-    }
-    .settings{
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 5;
-        grid-row-end: 5;
-      
-    
-    }
+  
+
     .media h2{
         margin-left:15%;
     }
@@ -1027,18 +1129,13 @@ h5{
     .media p {
         margin-left:2.5%;
     }
+   
    .bell{
       width:30%;
       
    }
-   .content h5{
-       padding:0;
-       margin-top:20px;
-       margin-left:15px;  
-   }
-   .content{
-       height:20px;
-   }
+  
+ 
    .span{
     float:left;
 }
@@ -1084,10 +1181,14 @@ h5{
         h2{
             margin-left:5%;
         }
-        .nav{
+        .media{
+            width:30%;
+            height:60%;
+            background-color: rgb(235, 235, 235);
             float:left;
-            background-color: mediumslateblue;
-            height:300%;
-            width:7%;
+            margin-left:2.5%;
+            margin-top:3%;
+            border: 1px solid grey;
+            
         }
     }
